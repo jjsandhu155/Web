@@ -1,0 +1,29 @@
+<html>
+<body>
+<h2>Weather Lab</h2>
+<ul>
+    <table border="1" cellpadding="15">
+    <tr>
+         <td><b>Time</b></td>
+         <td><b>Temp</b></td>
+         <td><b>Wind</b></td>
+         <td><b>Sky</b></td>
+    </tr>
+    {{#each list}}
+            <tr>
+            <td>{{startTime}}</td>
+            <td>{{temperature}} {{temperatureUnit}}</td>
+            <td>{{windSpeed}} {{windDirection}}</td>
+            <td><img src="{{icon}}" width=56 height=56></img></td>
+            </tr>
+    {{/each}}
+    </tr>
+    </table>
+</ul>
+
+<p></p>
+    <a href="/">Home</a>
+<p></p>
+
+</body>
+</html>

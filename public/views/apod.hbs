@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>NASA's Daily Astrologial Photo!</h2>
+        <ul>
+            <li>Title: {{title}}</li>
+            <li>Date: {{date}}</li>
+            <li>By: {{copyright}}</li>
+            <li>Caption: {{explanation}}</li>
+        </ul>
+        <img src="{{url}}" width=480 height=360></img>
+        <form action="/apod/" method="GET">
+    		<label>Change Date Here:</label>
+    		<input type="date" name="date" id="date" value={{date}}>
+    	    <button>Switch Date</button>
+        </form>
+        <a href="/">Home</a>
+    </body>
+</html>

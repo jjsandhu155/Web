@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <h1>Facts Facts and More Facts</h1>
+        <h3>facts about</h3>
+        
+        
+        <h4>Topic: {{topic}}</h4>
+        <ol>
+            {{#each facts}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ol>
+        
+        <form action="/facts" method="GET">
+            <label>Topic:</label>
+            <input type="text" name="topic" id="topic" value="{{topic}}">
+            <label>Number of facts:</label>
+            <input type="text" name="num" id="num" value="{{num}}">
+            <button>Submit</button>
+        </form>
+        
+        
+        <br><hr>
+        <a href='/'>home</a>
+    </body>
+</html>
