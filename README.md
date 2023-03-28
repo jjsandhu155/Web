@@ -1,2 +1,1 @@
-# Website
-Sample Website Demonstrating Proficiencies In HTML, Javascript, and Bootstrap/CSS
+sample website: html, javascript, bootstrap/css
